@@ -6,7 +6,7 @@
     $phone = filter_var(trim($_POST['phone']),FILTER_SANITIZE_STRING);
     
     if(mb_strlen($name)<=2 && ($name != "Ян" || $name != "Як")){
-        echo "Хэхэй баля";
+        echo "Неподходящее имя.";
         exit();
     }
 
